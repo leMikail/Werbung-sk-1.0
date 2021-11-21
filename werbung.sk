@@ -1,0 +1,14 @@
+command /werbung [<text>]:
+    permission: permission.legende.werbung
+    permission message: &1&lAirLiving &8» &7Diesen Befehl gibt es nicht.
+    trigger:
+        if arg 1 is set:
+            broadcast "&1&lAirLiving &8» &8-----------------------------"
+            broadcast "&1&lAirLiving &8» &8"
+            broadcast "&1&lAirLiving &8» &7Werbung von &b%player%&7:"
+            broadcast "&1&lAirLiving &8» &8"
+            broadcast "&1&lAirLiving &8» &b%arg-1%"
+            broadcast "&1&lAirLiving &8» &8"
+            broadcast "&1&lAirLiving &8» &8-----------------------------"
+        if arg 1 is not set:
+            message "&1&lAirLiving &8» &7Bitte benutze &b/Werbung &7<&btext&7>!"
